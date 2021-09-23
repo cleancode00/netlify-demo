@@ -1,19 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//建立一個DOM物件
-class HelloTitle extends React.Component {
+class NowTime extends React.Component {
+    constructor(props){
+        super(props)
+        this.state={time : new Date().toLocaleTimeString()}
+    }
+    
+    componentDidMount(){
+        const upTime = () =>{
+            this.setState({time : new Date().toLocaleTimeString()})
+        }
+        setInterval(upTime,1000)
+    }
+    
+    //加入state被修改時會執行的函式
+    componentDidUpdate(){
+        //執行內容
+        console.log('時間一分一秒在跑...')
+    }
+    
     render(){
-        return <p style={this.props.style}>{this.props.content}</p>
+        return <h1>現在時間是{this.state.time}</h1>
     }
 }
 
-class TitleDiv extends React.Component {
-    render(){
-        return (<div>
-                    <HelloTitle content="比較大的字" style={ {'font-size':18} } />
-                    <HelloTitle content="比較小的字" style={ {'font-size':12} } />
-               </div>)
-    }
-}
-
-ReactDOM.render(<TitleDiv />,document.getElementById('root'))
+ReactDOM.render(<NowTime />,document.getElementById('root'))
