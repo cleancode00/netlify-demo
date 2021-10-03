@@ -1,10 +1,11 @@
 const path = require('path');
 module.exports = { 
-    entry: ['./index.js', './app.jsx'],
+    // entry: ['./index.js', './app.jsx'],
+    entry: ['./src/index.jsx'],
     output: { 
-        filename: 'bundle.js',
+        filename: 'src/bundle.js',
         path: path.resolve(__dirname, './'),
-        publicPath: '/',
+     publicPath: '/',
     },
     module: {
         //rules的值是一個陣列可以存放多個loader物件
