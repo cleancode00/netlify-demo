@@ -17,7 +17,7 @@ class About extends React.Component{
                     <Route path={`${this.props.match.path}/his`} component={His} />
                     <Redirect  from={`${this.props.match.path}/story`} 
                     to={{pathname:`${this.props.match.url}/his`,
-                search: "?hey=UCCU",state:{name:'Referrer'}}} />
+                    search: "?hey=UCCU",state:{name:'Referrer'}}} />
                
                
                 </Switch>

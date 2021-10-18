@@ -5,19 +5,19 @@ body{
 
 
 #topBlock{
-    background: #4A90E2;
-    height: 75px;
+    background: #87CEFA;
+    height: 100%;
     text-align: center;
     margin-bottom: 24px;
 }
 
 .bookMark{
-    background: #4A90E2;
+    background: #87CEFA;
     color: #00408B;
     text-align: center;
     font-size: 24px;
     height: 75px;
-    width: 220px;
+    width: 33%;
     border:none;
 }
 
@@ -43,7 +43,7 @@ body{
 
 .inputTasksForm{
     width: 620px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 .inputTask{
@@ -80,7 +80,7 @@ body{
 }
 
 .icon_edit{
-    color: #4A90E2;
+    color: #87CEFA;
 }
 
 .inputName{
@@ -111,7 +111,7 @@ body{
 }
 
 .saveButton{
-    background: #4A90E2;
+    background: #87CEFA;
     color: #ffffff;
 }
 
