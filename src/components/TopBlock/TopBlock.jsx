@@ -6,7 +6,7 @@ class TopBlock extends React.Component{
         return(
             <div id="topBlock">
                 <BookMark to="/" name="My Tasks" />
-                <BookMark to="/inProgress" name="In Progress" />
+                <BookMark to="/inProgress" name="Ing" />
                 <BookMark to="/completed" name="Completed" />
             </div>
         )
